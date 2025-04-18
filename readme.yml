@@ -1,0 +1,16 @@
+name: Update README
+
+on:
+  schedule:
+    - cron: '0 0 * * *' # Updates daily
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: ashutosh00710/github-readme-activity-graph@main
+        with:
+          username: Siwale
+          theme: react
