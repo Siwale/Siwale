@@ -1,0 +1,5 @@
+# .github/workflows/security-audit.yml
+- name: Scan for vulnerabilities
+  uses: snyk/actions/node@master
+  with:
+    args: --severity-threshold=high
